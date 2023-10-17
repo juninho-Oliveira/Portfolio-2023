@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai Ford Company</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./LOGO-1.png">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+        <div class="card">
+            <div class="content">   
+                <img src="/projetos/youtube-kenzie/Kenzie.jpg"  alt="Kenzie Badobook">
+                <h3>Kenzie Badobook</h3>
+                <p>Usando HTML, CSS e javaScript rede social </p>
+                    <a href="./1Projetinho-/index.html" target="_blank">Mais Informações</a>
+            </div>
+        </div>
+</div>
+
+<script type="text/javaScript" src="../vanilla-tilt.js"></script>
+<script>
+
+function initializeTiltEffect() {
+            // Verificar o tamanho da tela
+            var larguraTela = window.innerWidth;
+
+            // Inicializar o vanilla-tilt apenas quando a tela for maior ou igual a 770px
+            if (larguraTela >= 770) {
+                VanillaTilt.init(document.querySelectorAll(".card"), {
+                    max: 25,
+                    speed: 400,
+                    glare: true,
+                });
+            } else {
+                // Caso a tela seja menor que 770px, remover o tilt dos cartões se já tiver sido inicializado
+                var cards = document.querySelectorAll(".card");
+                for (var i = 0; i < cards.length; i++) {
+                    VanillaTilt.destroy(cards[i]);
+                }
+            }
+        }
+
+        // Chamar a função de inicialização no carregamento da página
+        initializeTiltEffect();
+
+        // Adicionar um listener para verificar o tamanho da tela sempre que a janela for redimensionada
+        window.addEventListener('resize', initializeTiltEffect);
+    </script>
+</script>
+</body>
+</html>
+</body>
+</html>
