@@ -2,6 +2,8 @@
 
 <a href="https://portfolio-2023-two-green.vercel.app/">Acesse aqui o site do Portfólio</a>
 
+<img src="/imagens/projetos.jpg">
+
 
 Olá! Bem-vindo ao meu portfólio. Aqui você encontrará informações sobre meus projetos, habilidades e experiências.
 
